@@ -204,6 +204,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ratingButton" destination="OXO-G8-Dil" id="Jwb-LV-op6"/>
                         <outlet property="restaurantImageView" destination="JPG-4e-iQJ" id="v2j-GH-lC6"/>
                         <outlet property="tableView" destination="wi7-1F-UW5" id="zwo-TZ-oSf"/>
                     </connections>
@@ -236,7 +237,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZGJ-3I-rL4">
                                 <rect key="frame" x="62.5" y="207" width="250" height="70"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIP-dC-pF7">
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIP-dC-pF7">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                         <color key="backgroundColor" red="1" green="0.1398304635" blue="0.23409664990000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -250,8 +251,11 @@
                                                 <integer key="value" value="35"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ratingSelectedWithSender:" destination="IdU-OJ-qxz" eventType="touchUpInside" id="rkM-Do-yGr"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awT-PS-MD3">
+                                    <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awT-PS-MD3">
                                         <rect key="frame" x="90" y="0.0" width="70" height="70"/>
                                         <color key="backgroundColor" red="1" green="0.1398304635" blue="0.23409664990000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -265,8 +269,11 @@
                                                 <integer key="value" value="35"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ratingSelectedWithSender:" destination="IdU-OJ-qxz" eventType="touchUpInside" id="PXn-Rg-VBU"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDs-8b-FQQ">
+                                    <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDs-8b-FQQ">
                                         <rect key="frame" x="180" y="0.0" width="70" height="70"/>
                                         <color key="backgroundColor" red="1" green="0.1398304635" blue="0.23409664990000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -280,6 +287,9 @@
                                                 <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ratingSelectedWithSender:" destination="IdU-OJ-qxz" eventType="touchUpInside" id="RLw-5s-13F"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -298,7 +308,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="19c-tz-OdG" kind="unwind" unwindAction="closeWithSegue:" id="Jfc-az-7ag"/>
+                                    <segue destination="19c-tz-OdG" kind="unwind" identifier="unwindToDetailView" unwindAction="closeWithSegue:" id="Jfc-az-7ag"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -319,6 +329,7 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="8b7-Q6-Hbk" id="2Qe-Ii-fOD"/>
+                        <outlet property="ratingsStackView" destination="ZGJ-3I-rL4" id="fNn-8g-tGb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKc-48-7s6" userLabel="First Responder" sceneMemberID="firstResponder"/>

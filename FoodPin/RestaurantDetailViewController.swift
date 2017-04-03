@@ -12,6 +12,7 @@ class RestaurantDetailViewController: UIViewController {
     
     @IBOutlet weak var restaurantImageView:UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var ratingButton: UIButton!
     var restaurant: Restaurant!
 
     override func viewDidLoad() {
@@ -23,6 +24,9 @@ class RestaurantDetailViewController: UIViewController {
         title = restaurant.name
         tableView.estimatedRowHeight = 36
         tableView.rowHeight = UITableViewAutomaticDimension
+        if restaurant.rating != nil {
+            ratingButton.setImage(UIImage(named: restaurant.rating!), for: .normal)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,7 +36,12 @@ class RestaurantDetailViewController: UIViewController {
     }
     
     @IBAction func close(segue: UIStoryboardSegue) {
-        
+        if let reviewViewController = segue.source as? ReviewViewController {
+            if let rating = reviewViewController.rating {
+                ratingButton.setImage(UIImage(named: rating), for: .normal)
+                restaurant.rating = rating
+            }
+        }
     }
 
 }
