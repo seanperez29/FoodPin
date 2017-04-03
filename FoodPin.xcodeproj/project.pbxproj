@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		91FE03731E90A9D6000929C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE03721E90A9D6000929C0 /* AppDelegate.swift */; };
-		91FE03751E90A9D6000929C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE03741E90A9D6000929C0 /* ViewController.swift */; };
 		91FE03781E90A9D6000929C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FE03761E90A9D6000929C0 /* Main.storyboard */; };
 		91FE037A1E90A9D6000929C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FE03791E90A9D6000929C0 /* Assets.xcassets */; };
 		91FE037D1E90A9D6000929C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FE037B1E90A9D6000929C0 /* LaunchScreen.storyboard */; };
+		91FE03851E90AA47000929C0 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE03841E90AA47000929C0 /* RestaurantTableViewController.swift */; };
+		91FE03871E90AE63000929C0 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE03861E90AE63000929C0 /* RestaurantTableViewCell.swift */; };
+		91FE03891E90C762000929C0 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE03881E90C762000929C0 /* RestaurantDetailViewController.swift */; };
+		91FE038B1E90C9FE000929C0 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE038A1E90C9FE000929C0 /* Restaurant.swift */; };
+		91FE03961E91E5A3000929C0 /* RestaurantDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE03951E91E5A3000929C0 /* RestaurantDetailTableViewCell.swift */; };
+		91FE039B1E91FED7000929C0 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE039A1E91FED7000929C0 /* ReviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		91FE036F1E90A9D6000929C0 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FE03721E90A9D6000929C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91FE03741E90A9D6000929C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		91FE03771E90A9D6000929C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91FE03791E90A9D6000929C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91FE037C1E90A9D6000929C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91FE037E1E90A9D6000929C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91FE03841E90AA47000929C0 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		91FE03861E90AE63000929C0 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		91FE03881E90C762000929C0 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		91FE038A1E90C9FE000929C0 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		91FE03951E91E5A3000929C0 /* RestaurantDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTableViewCell.swift; sourceTree = "<group>"; };
+		91FE039A1E91FED7000929C0 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				91FE03721E90A9D6000929C0 /* AppDelegate.swift */,
-				91FE03741E90A9D6000929C0 /* ViewController.swift */,
 				91FE03761E90A9D6000929C0 /* Main.storyboard */,
 				91FE03791E90A9D6000929C0 /* Assets.xcassets */,
 				91FE037B1E90A9D6000929C0 /* LaunchScreen.storyboard */,
 				91FE037E1E90A9D6000929C0 /* Info.plist */,
+				91FE03841E90AA47000929C0 /* RestaurantTableViewController.swift */,
+				91FE03861E90AE63000929C0 /* RestaurantTableViewCell.swift */,
+				91FE03881E90C762000929C0 /* RestaurantDetailViewController.swift */,
+				91FE038A1E90C9FE000929C0 /* Restaurant.swift */,
+				91FE03951E91E5A3000929C0 /* RestaurantDetailTableViewCell.swift */,
+				91FE039A1E91FED7000929C0 /* ReviewViewController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -137,7 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91FE03751E90A9D6000929C0 /* ViewController.swift in Sources */,
+				91FE038B1E90C9FE000929C0 /* Restaurant.swift in Sources */,
+				91FE03851E90AA47000929C0 /* RestaurantTableViewController.swift in Sources */,
+				91FE039B1E91FED7000929C0 /* ReviewViewController.swift in Sources */,
+				91FE03871E90AE63000929C0 /* RestaurantTableViewCell.swift in Sources */,
+				91FE03961E91E5A3000929C0 /* RestaurantDetailTableViewCell.swift in Sources */,
+				91FE03891E90C762000929C0 /* RestaurantDetailViewController.swift in Sources */,
 				91FE03731E90A9D6000929C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +324,7 @@
 				91FE03831E90A9D6000929C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
