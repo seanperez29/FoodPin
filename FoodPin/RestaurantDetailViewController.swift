@@ -43,6 +43,13 @@ class RestaurantDetailViewController: UIViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMap" {
+            let controller = segue.destination as! MapViewController
+            controller.restaurant = restaurant
+        }
+    }
 
 }
 

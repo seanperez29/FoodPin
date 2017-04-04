@@ -25,6 +25,10 @@ class RestaurantTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         navigationController?.hidesBarsOnSwipe = true
     }
+    
+    @IBAction func unwindToHomeScreen(segue: UIStoryboardSegue) {
+        
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurants.count
