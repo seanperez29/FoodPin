@@ -242,7 +242,7 @@
         <!--New Restaurant-->
         <scene sceneID="YjD-z9-52l">
             <objects>
-                <tableViewController id="DwX-Cj-yVW" sceneMemberID="viewController">
+                <tableViewController id="DwX-Cj-yVW" customClass="AddRestaurantController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QZb-Hb-zOX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,11 +257,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photoalbum" translatesAutoresizingMaskIntoConstraints="NO" id="g9i-4U-IJ7">
-                                                    <rect key="frame" x="67" y="60" width="240" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoalbum" translatesAutoresizingMaskIntoConstraints="NO" id="g9i-4U-IJ7">
+                                                    <rect key="frame" x="155" y="92" width="64" height="64"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="g9i-4U-IJ7" firstAttribute="centerX" secondItem="i83-Sf-bI3" secondAttribute="centerX" id="LK5-yJ-Npc"/>
+                                                <constraint firstItem="g9i-4U-IJ7" firstAttribute="centerY" secondItem="i83-Sf-bI3" secondAttribute="centerY" id="izR-WE-j0D"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="lea-5J-3W7">
@@ -384,6 +387,9 @@
                                                     <state key="normal" title="YES">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="haveYouBeenThereWithSender:" destination="DwX-Cj-yVW" eventType="touchUpInside" id="3ll-Dr-exl"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-yf-9Vu">
                                                     <rect key="frame" x="62" y="34" width="46" height="30"/>
@@ -395,6 +401,9 @@
                                                     <state key="normal" title="NO">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="haveYouBeenThereWithSender:" destination="DwX-Cj-yVW" eventType="touchUpInside" id="eig-mj-GCw"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -419,10 +428,24 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Vqo-dr-Ci1">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="bOC-VK-0on" kind="unwind" unwindAction="unwindToHomeScreenWithSegue:" id="s1R-8U-fAR"/>
+                                <segue destination="bOC-VK-0on" kind="unwind" identifier="unwindToHomeScreen" unwindAction="unwindToHomeScreenWithSegue:" id="s1R-8U-fAR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="5Py-aR-bqi">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="savePressed:" destination="DwX-Cj-yVW" id="Ag6-oY-4wa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="locationTextField" destination="jpI-tD-5YZ" id="dvc-nL-5DF"/>
+                        <outlet property="nameTextField" destination="b9V-kR-RM9" id="udk-vX-uzb"/>
+                        <outlet property="noButton" destination="Wea-yf-9Vu" id="lxp-P2-5tu"/>
+                        <outlet property="restaurantImage" destination="g9i-4U-IJ7" id="VmV-kX-ipw"/>
+                        <outlet property="typeTextField" destination="pWv-H0-6Cw" id="Kaf-EU-RIB"/>
+                        <outlet property="yesButton" destination="Y6G-s4-84C" id="unE-aw-87T"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWr-Qs-796" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="bOC-VK-0on" userLabel="Exit" sceneMemberID="exit"/>
