@@ -24,6 +24,8 @@
 		91FE03F61E947E5B000929C0 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE03F51E947E5B000929C0 /* WalkthroughPageViewController.swift */; };
 		91FE03FE1E9498B8000929C0 /* discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FE03FD1E9498B8000929C0 /* discover.storyboard */; };
 		91FE04011E949910000929C0 /* about.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FE03FF1E949910000929C0 /* about.storyboard */; };
+		91FE04031E94A811000929C0 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE04021E94A811000929C0 /* AboutTableViewController.swift */; };
+		91FE04051E94AB95000929C0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE04041E94AB95000929C0 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		91FE03F51E947E5B000929C0 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		91FE03FD1E9498B8000929C0 /* discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = discover.storyboard; sourceTree = "<group>"; };
 		91FE04001E949910000929C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/about.storyboard; sourceTree = "<group>"; };
+		91FE04021E94A811000929C0 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		91FE04041E94AB95000929C0 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 				91FE03A11E93270E000929C0 /* AddRestaurantController.swift */,
 				91FE03F31E947CEA000929C0 /* WalkthroughContentViewController.swift */,
 				91FE03F51E947E5B000929C0 /* WalkthroughPageViewController.swift */,
+				91FE04021E94A811000929C0 /* AboutTableViewController.swift */,
+				91FE04041E94AB95000929C0 /* WebViewController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -200,6 +206,8 @@
 				91FE03891E90C762000929C0 /* RestaurantDetailViewController.swift in Sources */,
 				91FE03731E90A9D6000929C0 /* AppDelegate.swift in Sources */,
 				91FE03A01E9319EB000929C0 /* MapViewController.swift in Sources */,
+				91FE04051E94AB95000929C0 /* WebViewController.swift in Sources */,
+				91FE04031E94A811000929C0 /* AboutTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
