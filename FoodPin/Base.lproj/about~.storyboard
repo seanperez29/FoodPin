@@ -740,12 +740,12 @@
                     <connections>
                         <segue destination="whN-6Y-qcV" kind="relationship" relationship="viewControllers" id="qgh-eh-3oW"/>
                         <segue destination="e61-VS-pxR" kind="relationship" relationship="viewControllers" id="q5p-UO-cQ4"/>
-                        <segue destination="dkg-pT-FyO" kind="relationship" relationship="viewControllers" id="Bsy-uc-ju3"/>
+                        <segue destination="cKa-23-HPA" kind="relationship" relationship="viewControllers" id="Bsy-uc-ju3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6E-gQ-rvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="553" y="-136"/>
+            <point key="canvasLocation" x="223" y="-244"/>
         </scene>
         <!--discover-->
         <scene sceneID="1Bf-SN-suI">
@@ -757,26 +757,59 @@
             </objects>
             <point key="canvasLocation" x="1228" y="-550"/>
         </scene>
-        <!--UINavigationController-2Cy-vs-sFn-->
-        <scene sceneID="bce-ZU-8uH">
+        <!--About-->
+        <scene sceneID="pf5-nE-JbH">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UINavigationController-2Cy-vs-sFn" storyboardName="about" referencedIdentifier="UINavigationController-2Cy-vs-sFn" id="dkg-pT-FyO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="PaB-Ae-bjb"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WeD-a1-j8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="UITableViewController-TR9-ac-fot" id="1NO-tr-gol" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5vM-qN-qlw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gPT-yt-D8V">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gPT-yt-D8V" id="fev-bm-aad">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1NO-tr-gol" id="yCQ-qh-WWX"/>
+                            <outlet property="delegate" destination="1NO-tr-gol" id="idX-tt-8dj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="About" id="Qnf-aZ-7jD"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfD-z2-OGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="326"/>
+            <point key="canvasLocation" x="1098" y="432"/>
         </scene>
-        <!--UITableViewController-TR9-ac-fot-->
-        <scene sceneID="wiP-Fv-OeY">
+        <!--About-->
+        <scene sceneID="kpg-rR-mlE">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UITableViewController-TR9-ac-fot" storyboardName="about" referencedIdentifier="UITableViewController-TR9-ac-fot" id="cGg-Q9-TTc" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kQb-0M-eb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="UINavigationController-2Cy-vs-sFn" automaticallyAdjustsScrollViewInsets="NO" id="cKa-23-HPA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="cxG-az-0QB"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fa6-RM-nHK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1NO-tr-gol" kind="relationship" relationship="rootViewController" id="mEk-jt-glZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vp7-Zw-m5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="661" y="326"/>
+            <point key="canvasLocation" x="222" y="432"/>
         </scene>
     </scenes>
     <resources>
+        <image name="about" width="25" height="25"/>
         <image name="barrafina" width="448" height="448"/>
         <image name="close" width="64" height="64"/>
         <image name="dislike" width="64" height="64"/>

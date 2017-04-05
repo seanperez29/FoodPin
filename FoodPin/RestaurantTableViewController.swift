@@ -24,6 +24,9 @@ class RestaurantTableViewController: UITableViewController {
         tableView.tableHeaderView = searchController.searchBar
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search restaurants..."
+        searchController.searchBar.tintColor = UIColor.white
+        searchController.searchBar.barTintColor = UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1.0)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,10 +34,23 @@ class RestaurantTableViewController: UITableViewController {
         navigationController?.hidesBarsOnSwipe = true
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let defaults = UserDefaults.standard
+        let hasViewedWalkthrough = defaults.bool(forKey: "hasViewedWalkthrough")
+        if hasViewedWalkthrough {
+            return
+        }
+        if let pageViewController = storyboard?.instantiateViewController(withIdentifier: "WalkthroughController") as? WalkthroughPageViewController {
+            present(pageViewController, animated: true, completion: nil)
+        }
+    }
+    
     func filterContentForSearchText(searchText: String) {
         searchResults = restaurants.filter({ (restaurant) -> Bool in
             let nameMatch = restaurant.name.range(of: searchText, options: .caseInsensitive)
-            return nameMatch != nil
+            let locationMatch = restaurant.location.range(of: searchText, options: .caseInsensitive)
+            return nameMatch != nil || locationMatch != nil
         })
     }
     

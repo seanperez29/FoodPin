@@ -21,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         UINavigationBar.appearance().tintColor = UIColor.white
         UIApplication.shared.statusBarStyle = .lightContent
+        UITabBar.appearance().tintColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+        //UITabBar.appearance().barTintColor = UIColor.black
+        UITabBar.appearance().selectionIndicatorImage = UIImage(named: "tabitem-selected")
         return true
     }
 

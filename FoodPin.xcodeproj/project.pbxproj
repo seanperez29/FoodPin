@@ -20,6 +20,10 @@
 		91FE039E1E9312E6000929C0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FE039D1E9312E6000929C0 /* MapKit.framework */; };
 		91FE03A01E9319EB000929C0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE039F1E9319EB000929C0 /* MapViewController.swift */; };
 		91FE03A21E93270E000929C0 /* AddRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE03A11E93270E000929C0 /* AddRestaurantController.swift */; };
+		91FE03F41E947CEA000929C0 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE03F31E947CEA000929C0 /* WalkthroughContentViewController.swift */; };
+		91FE03F61E947E5B000929C0 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE03F51E947E5B000929C0 /* WalkthroughPageViewController.swift */; };
+		91FE03FE1E9498B8000929C0 /* discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FE03FD1E9498B8000929C0 /* discover.storyboard */; };
+		91FE04011E949910000929C0 /* about.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FE03FF1E949910000929C0 /* about.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		91FE039D1E9312E6000929C0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		91FE039F1E9319EB000929C0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		91FE03A11E93270E000929C0 /* AddRestaurantController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRestaurantController.swift; sourceTree = "<group>"; };
+		91FE03F31E947CEA000929C0 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		91FE03F51E947E5B000929C0 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		91FE03FD1E9498B8000929C0 /* discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = discover.storyboard; sourceTree = "<group>"; };
+		91FE04001E949910000929C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/about.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,8 @@
 			children = (
 				91FE03721E90A9D6000929C0 /* AppDelegate.swift */,
 				91FE03761E90A9D6000929C0 /* Main.storyboard */,
+				91FE03FF1E949910000929C0 /* about.storyboard */,
+				91FE03FD1E9498B8000929C0 /* discover.storyboard */,
 				91FE03791E90A9D6000929C0 /* Assets.xcassets */,
 				91FE037B1E90A9D6000929C0 /* LaunchScreen.storyboard */,
 				91FE037E1E90A9D6000929C0 /* Info.plist */,
@@ -85,6 +95,8 @@
 				91FE039A1E91FED7000929C0 /* ReviewViewController.swift */,
 				91FE039F1E9319EB000929C0 /* MapViewController.swift */,
 				91FE03A11E93270E000929C0 /* AddRestaurantController.swift */,
+				91FE03F31E947CEA000929C0 /* WalkthroughContentViewController.swift */,
+				91FE03F51E947E5B000929C0 /* WalkthroughPageViewController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -163,7 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91FE037D1E90A9D6000929C0 /* LaunchScreen.storyboard in Resources */,
+				91FE04011E949910000929C0 /* about.storyboard in Resources */,
 				91FE037A1E90A9D6000929C0 /* Assets.xcassets in Resources */,
+				91FE03FE1E9498B8000929C0 /* discover.storyboard in Resources */,
 				91FE03781E90A9D6000929C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +192,8 @@
 				91FE03A21E93270E000929C0 /* AddRestaurantController.swift in Sources */,
 				91FE038B1E90C9FE000929C0 /* Restaurant.swift in Sources */,
 				91FE03851E90AA47000929C0 /* RestaurantTableViewController.swift in Sources */,
+				91FE03F41E947CEA000929C0 /* WalkthroughContentViewController.swift in Sources */,
+				91FE03F61E947E5B000929C0 /* WalkthroughPageViewController.swift in Sources */,
 				91FE039B1E91FED7000929C0 /* ReviewViewController.swift in Sources */,
 				91FE03871E90AE63000929C0 /* RestaurantTableViewCell.swift in Sources */,
 				91FE03961E91E5A3000929C0 /* RestaurantDetailTableViewCell.swift in Sources */,
@@ -204,6 +220,14 @@
 				91FE037C1E90A9D6000929C0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		91FE03FF1E949910000929C0 /* about.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91FE04001E949910000929C0 /* Base */,
+			);
+			name = about.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
